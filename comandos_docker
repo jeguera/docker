@@ -1,1 +1,7 @@
+docker volume create apache-data
+
+docker volume inspect apache-data
+
 docker run --name apache-server2 -p 80:80 -m 1GB -d -v apache-data:/usr/local/apache2/htdocs httpd
+
+
